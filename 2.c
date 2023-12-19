@@ -26,10 +26,10 @@ void main(){
 	int count=0;
 	int i,c;
 	
-	printf("Enter the name : ");
-    gets(a);
+printf("Enter the name : ");
+ gets(a);
 	
-	for(c='a';c<='z';c++|| c='A';c<='Z';c++ ){
+	for(c='a'; c<='z'; c++){
             count=0;
 		for(i=0;a[i]!=NULL;i++){
 			if(c==a[i]){
