@@ -21,20 +21,22 @@ Given string is not a Palindrome.
  
 int main()
 {
-    char a[100];  
-    int i,length,n,b=0;
+    char a[50];  
+    int i,b=0,c=1;
  
     printf("Enter the name : ");
     gets(a);
-    
-    length=strlen(a);
  
-    for(i=0;i<length;i++)  
-    {
-    	if(a[i]==a[length-i-1])
-    	b++;
- 	}
- 	if(b==i){
+    for(i=0;a[i]!='\0;i++){
+	    b++;
+    }
+	for(i=0; i<b/2; i++){
+		if(a[i] != a[b-1-i]){
+			c=0;
+		}
+	}
+    	
+ 	if(c==i){
  		printf("string is palindrome");
 	 } 
     else{
